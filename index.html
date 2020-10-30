@@ -133,11 +133,12 @@ i.fa-envelope:hover:before {content: "\f2b6";}
   border-left-width: 2px;
   border-left-color: rgb(255, 255, 255);
   border-left-style: solid;
-  padding-top: 15px;
+  padding-top: 12.5px;
   padding-right: 30px;
-  padding-bottom: 15px;
+  padding-bottom: 12.5px;
   padding-left: 30px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .button:hover {
@@ -229,6 +230,10 @@ h3 {
   display: flex; 
   justify-content: center; 
   padding-top: 10px;
+}
+
+.mail {
+  color:rgb(0, 0, 0);
 }
 
 /* Turn off parallax scrolling for tablets and phones */
@@ -331,7 +336,7 @@ h3 {
   <div class="caption2">
     <span class="border" style="letter-spacing: 5px; text-transform: uppercase; font: 20px 'Lato', sans-serif;color: #f7f7f7;">Are you a filmmaker?</span> <br/><br/><br/>
     <span class="border" style="font-size:15px;color: #f7f7f7;">This is an open call for filmmakers around the globe to reach out <br/> to us with your best works. If you are interested in showcasing<br/> your film at our festival submit your work in the link below!</span> <br/><br/><br/>
-    <button class="button" type="button">SUBMIT HERE</button>
+    <a class="button" href="https://filmfreeway.com/AnOrdinaryDayFilmFestival">SUBMIT HERE</a>
     </div>
 </div>
 
@@ -340,15 +345,15 @@ h3 {
   <div class="profileContainer">
     <div>
       <img class="profilePicture" src="Pictures/helena.jpg"/>
-      <p class="profileText">Helena Norrell   <i class="far fa-envelope"></i></p>
+      <p class="profileText">Helena Norrell   <a class="mail" href="mailto:helena@anordinarydayfilmfestival.com" target="_blank"><i class="far fa-envelope"></i></a></p>
     </div>
     <div>
       <img class="profilePicture" src="Pictures/mats.jpg"/>
-      <p class="profileText">Mats Landström   <i class="far fa-envelope"></i></p>
+      <p class="profileText">Mats Landström   <a class="mail" href="mailto:mats@anordinarydayfilmfestival.com" target="_blank"><i class="far fa-envelope"></i></a></p>
     </div>
     <div>
       <img class="profilePicture" src="Pictures/carolina.jpg"/>
-      <p class="profileText">Carolina Hindsjö   <i class="far fa-envelope"></i></p>
+      <p class="profileText">Carolina Hindsjö   <a class="mail" href="mailto:carolina@anordinarydayfilmfestival.com" target="_blank"><i class="far fa-envelope"></i></a></p>
     </div>
   </div>
 </div>
