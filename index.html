@@ -25,8 +25,8 @@ body, html {
 }
 
 body::after{
- display:none;
- content: url(Pictures/2018_Hover.png) url(Pictures/2019_Hover.png);
+   position:absolute; width:0; height:0; overflow:hidden; z-index:-1; // hide images
+   content:url('Pictures/2019_Hover.png') url('Pictures/2018_Hover.png');   // load images
 }
 
 i.fa-envelope:hover:before {content: "\f2b6";}
