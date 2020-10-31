@@ -238,20 +238,29 @@ h3 {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
-  .bgimg-1, .bgimg-2, .bgimg-3{
+  .bgimg-2{
     background-attachment: scroll;
   }
 
   .Header_1 {
     font-size: 35px;
     top: 40%;
-    text-shadow: 0px 0px 1px rgb(255, 255, 255);
+    background-color: #000;
+    color: #fff;
+    opacity: 0.90;
+    left: 0%;
+    right: 0%;
   }
   .Header_2 {
     font-size: 12px;
+    color: #fff;
   }
   .messageText {
     padding: 50px 30px;
+  }
+
+  .bgimg-1 {
+    background-image:  url("Pictures/Mobile-Picture.png");
   }
 
   .bgimg-2 {
