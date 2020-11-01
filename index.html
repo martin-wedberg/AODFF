@@ -24,19 +24,13 @@ body, html {
   color: #777;
 }
 
-body::after{
-   position:absolute; width:0; height:0; overflow:hidden; z-index:-1; // hide images
-   content:url('Pictures/2019_Hover.png') url('Pictures/2018_Hover.png');   // load images
+body::after {
+  display: none;
+  content: url('Pictures/2018_Hover.png') url('Pictures/2019_Hover.png');
 }
 
 i.fa-envelope:hover:before {content: "\f2b6";}
 
-.ratio {
-  display: grid;
-}
-.ratio > * {
-  grid-area: 1/1;
-}
 
 .profilePicture {
   width: 250px;
@@ -243,6 +237,10 @@ h3 {
   color:rgb(0, 0, 0);
 }
 
+.archiveSpace {
+  display: none;
+}
+
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
   .bgimg-1, .bgimg-2 .bgimg-3{
@@ -305,7 +303,7 @@ h3 {
   }
 
   .archiveTitle {
-    padding-bottom: 20%;
+    padding-bottom: 10%;
   }
 
   #eighteen {
@@ -346,6 +344,10 @@ h3 {
 
   .openText {
     text-align: justify;
+  }
+
+  .archiveSpace {
+    display: block;
   }
 
 }
@@ -402,14 +404,8 @@ h3 {
   <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
     <h3 class="archiveTitle" style="text-align:center; color:#fff;">Previous Festivals</h3>
     <div class="archiveContainer">
-      <div class="ratio">
-        <svg viewBox="0 0 1 1"></svg>
-        <a href="http://anordinarydayfilmfestival.com/index.html#" target="_blank"><div id="nineteen"></div></a>
-      </div>
-      <div class="ratio">
-        <svg viewBox="0 0 1 1"></svg>
-        <a href="http://anordinarydayfilmfestival.com/index2018.html" target="_blank"><div id="eighteen"></div></a>
-      </div>
+      <a href="http://anordinarydayfilmfestival.com/index.html#" target="_blank"><div id="nineteen"></div></a> <br class="archiveSpace"/><br class="archiveSpace"/>
+      <a href="http://anordinarydayfilmfestival.com/index2018.html" target="_blank"><div id="eighteen"></div></a>
     </div>
   </div>
 </div>
