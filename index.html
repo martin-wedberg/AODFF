@@ -7,6 +7,10 @@
 <script src="https://kit.fontawesome.com/65c152d5b2.js" crossorigin="anonymous"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+#preload-01 { background: url(Pictures/Desktop-Picture2.png) no-repeat -9999px -9999px; }
+#preload-02 { background: url(Pictures/2018_Hover.png) no-repeat -9999px -9999px; }
+#preload-03 { background: url(Pictures/2019_Hover.png) no-repeat -9999px -9999px; }
+
 @font-face {
   font-family: "Andale Mono";
   src: url(andalemo.ttf);
@@ -362,7 +366,7 @@ h3 {
 
   .caption2 {
     position: absolute;
-    top: 10%;
+    top: 50%;
     text-align: center;
     color: #000;
     left: 0%;
@@ -436,6 +440,10 @@ h3 {
     display: block;
   }
 
+  .projectsFull {
+    display: none;
+  }
+
 }
 </style>
 </head>
@@ -462,7 +470,7 @@ h3 {
     We are thanking Stockholm Stad for valuable support.</p>
 </div>
 
-<div style="position:relative;">
+<div class="projectsFull" style="position:relative;">
   <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
     <h3 style="text-align:center; color:#fff;"> Recent Projects</h3>
     <div class="projectContainer">
