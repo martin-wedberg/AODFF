@@ -108,7 +108,7 @@
   }
 
   function togglePopUp(id){
-    fetch('../filmData.json')
+    fetch('./filmData.json')
       .then(response => response.json())
       .then(data => {
         const films = data
