@@ -93,7 +93,7 @@
       .then(data => {
         const markup = data.map(film => 
           "<div class='filmObject' onClick='togglePopUp("+film.id+")'>"+
-            "<img src='/Films/"+film.picture+"' class='filmImage' style='width:100%'/>"+
+            "<img src='./Films/"+film.picture+"' class='filmImage' style='width:100%'/>"+
             "<div class='filmCenter'>"+
               "<div class='filmText filmTitle'>"+film.title+"</div>"+
               "<div class='filmText'>"+film.artist+"</div>"+
@@ -112,7 +112,7 @@
       .then(response => response.json())
       .then(data => {
         const films = data
-        document.getElementById('popUpImage').src = "Films/"+films[id].picture;
+        document.getElementById('popUpImage').src = "./Films/"+films[id].picture;
         document.getElementById('popUpTitle').innerHTML = "Title: "+films[id].title;
         document.getElementById('popUpArtist').innerHTML = "Artist: "+films[id].artist;
         document.getElementById('popUpNation').innerHTML = "Nation: "+films[id].nation;
