@@ -118,8 +118,8 @@
         document.getElementById('popUpNation').innerHTML = "Nation: "+films[id].nation;
         document.getElementById('popUpLength').innerHTML = "Length: "+films[id].length;
         document.getElementById('popUpDescription').innerHTML = "Description: "+films[id].description;
+	document.getElementById('filmPopUp').style.display = "block";
       })
-    document.getElementById('filmPopUp').style.display = "block";
   }
 
   function hidePopUp(){
