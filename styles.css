@@ -132,8 +132,8 @@ html {
   display: inline-block;
   height: 24px;
   border-bottom: 2px solid;
-  color: #FF6565;
-  border-color: #FF6565;
+  color: #000000;
+  border-color: #000000;
   margin-top: 10px;
 }
 
@@ -497,7 +497,7 @@ h5 {
 
   /* Add an active class to highlight the current page */
   .topnav a.active {
-    background-color: #FF6565;
+    background-color: #000000;
     color: white;
     content: none;
     margin-top: 0px;
