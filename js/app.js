@@ -88,7 +88,7 @@
 
   function displayFilms(){   
     const filmContainer = document.getElementById("filmContainer");
-    fetch('../filmData.json')
+    fetch('./filmData.json')
       .then(response => response.json())
       .then(data => {
         const markup = data.map(film => 
@@ -108,7 +108,7 @@
   }
 
   function togglePopUp(id){
-    fetch('../filmData.json')
+    fetch('./filmData.json')
       .then(response => response.json())
       .then(data => {
         const films = data
