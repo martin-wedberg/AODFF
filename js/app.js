@@ -88,12 +88,12 @@
 
   function displayFilms(){   
     const filmContainer = document.getElementById("filmContainer");
-    fetch('./filmData.json')
+    fetch('../filmData.json')
       .then(response => response.json())
       .then(data => {
         const markup = data.map(film => 
           "<div class='filmObject' onClick='togglePopUp("+film.id+")'>"+
-            "<img src='./Films/"+film.picture+"' class='filmImage' style='width:100%'/>"+
+            "<img src='./Films/"+film.picture+"' class='filmImage' style='width:100%' alt='Film Picture of " + film.title + "'/>"+
             "<div class='filmCenter'>"+
               "<div class='filmText filmTitle'>"+film.title+"</div>"+
               "<div class='filmText'>"+film.artist+"</div>"+
@@ -108,7 +108,7 @@
   }
 
   function togglePopUp(id){
-    fetch('./filmData.json')
+    fetch('../filmData.json')
       .then(response => response.json())
       .then(data => {
         const films = data
@@ -118,7 +118,7 @@
         document.getElementById('popUpNation').innerHTML = "Nation: "+films[id].nation;
         document.getElementById('popUpLength').innerHTML = "Length: "+films[id].length;
         document.getElementById('popUpDescription').innerHTML = "Description: "+films[id].description;
-	document.getElementById('filmPopUp').style.display = "block";
+        document.getElementById('filmPopUp').style.display = "block";
       })
   }
 
