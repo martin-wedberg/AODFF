@@ -534,6 +534,10 @@ h5 {
     background-attachment: scroll;
   }
 
+  h1 {
+    font-size: 35px;
+  }
+
   .Header_1 {
     font-size: 35px;
   }
