@@ -74,13 +74,6 @@ html {
   z-index: 5;
 }
 
-/* ---------------------- NAVBAR TO THE RIGHT!
-.topnav-right{
-  float: right;
-  margin-right: 8%;
-} */
-
-
 .topnav-fixed-top.scrolled {
   background-color: #fff !important;
   box-shadow: 0px 0px 10px rgb(213, 213, 213);
@@ -99,8 +92,8 @@ html {
   font-size: 14px;
   line-height: 1.5em;
   font-family: "Open Sans", sans-serif;
-  font-weight: 600;
   letter-spacing: 1px;
+  font-weight: 600;
   display: inline-block;
   position: relative;
 }
@@ -457,6 +450,10 @@ h5 {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
+  .bgimg-1 {
+    background-image: url("Pictures/Desktop-Mobile.png");
+  }
+
   .topnav a:not(:first-child) {
     display: none;
   }
@@ -499,7 +496,8 @@ h5 {
 
   /* Add an active class to highlight the current page */
   .topnav a.active {
-    background-color: #000000;
+    background-color: #0000006f;
+    border: none;
     color: white;
     content: none;
     margin-top: 0px;
