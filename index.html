@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>An Ordinary Day Film Festival</title>
+  <link rel="icon" type="image/png" href="Pictures/Favicon2.png">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/65c152d5b2.js" crossorigin="anonymous"></script>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+  <!--HEADER-->
+  <div class="topnav topnav-fixed-top" id="myTopnav">
+    <div class="navRight">
+      <a href="#/home" class="mainLink" id="topHome" class="active" onClick="showStartView()">HOME</a>
+      <a href="#/films" class="mainLink" id="topFilms" onClick="showFilmsView()">FILMS</a>
+      <a href="#/schedule" class="mainLink" id="topSchedule" onClick="showScheduleView()">SCHEDULE</a>
+      <a href="#/contact" class="mainLink" id="topContact" onClick="showContactView()">CONTACT</a>
+      <a href="#/about" class="mainLink" id="topAbout" onClick="showAboutView()">ABOUT</a>
+      <div class="dropdown">
+        <div class="dropbtn">ARCHIVE</div>
+        <div class="dropdown-content">
+          <a href="http://anordinarydayfilmfestival.com/AODFF_2019/index.html" class="archiveLink" target="blank">2019 Festival</a>
+          <a href="http://anordinarydayfilmfestival.com/AODFF_2018/index.html" class="archiveLink" target="blank">2018 Festival</a>
+        </div>
+      </div>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()" aria-label="Hamburger menu">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <!--HEADER-->
+
+  <!--MAIN VIEW-->
+  <div class="bgimg-1" id="mainView">
+    <div class="Header_1">
+      <h1 class="border">An<br/> Ordinary Day<br/> Film Festival<br/>
+        <div class="Header_2">
+          <span style="font-family:Andale Bold;">Art Film</span> Animation <span style="font-family:Andale Bold;">Short</span> Experimental
+        </div>
+      </h1>
+    </div>
+  </div>
+  <!--MAIN VIEW-->
+
+  <!--CONTACT VIEW-->
+  <div class="messageText" id="contactView">
+    <h3 style="text-align:center;">An Ordinary Day Arrangers</h3>
+    <div class="profileContainer">
+      <div>
+        <img class="profilePicture" src="Pictures/helena.jpg" alt="Picture of Helena"/>
+        <p class="profileText">Helena Norell   <a class="mail" href="mailto:helena@anordinarydayfilmfestival.com" target="_blank" aria-label="Send mail to Helena"><i class="far fa-envelope"></i></a></p>
+        <p class="profilePosition">Festival Organizer</p>
+      </div>
+      <div>
+        <img class="profilePicture" src="Pictures/mats.jpg" alt="Picture of Mats"/>
+        <p class="profileText">Mats Landström   <a class="mail" href="mailto:mats@anordinarydayfilmfestival.com" target="_blank" aria-label="Send mail to Mats"><i class="far fa-envelope"></i></a></p>
+        <p class="profilePosition">Festival Organizer</p>
+      </div>
+      <div>
+        <img class="profilePicture" src="Pictures/carolina.jpg" alt="Picture of Carolina"/>
+        <p class="profileText">Carolina Hindsjö   <a class="mail" href="mailto:carolina@anordinarydayfilmfestival.com" target="_blank" aria-label="Send mail to Carolina"><i class="far fa-envelope"></i></a></p>
+        <p class="profilePosition">Festival Organizer</p>
+      </div>
+      <div>
+        <img class="profilePicture" src="Pictures/kasia.jpg" alt="Picture of Kasia"/>
+        <p class="profileText">Kasia Piorek   <a class="mail" href="mailto:kasiapiorek@gmail.com" target="_blank" aria-label="Send mail to Kasia"><i class="far fa-envelope"></i></a></p>
+        <p class="profilePosition">Festival Organizer</p>
+      </div>
+    </div>
+  </div>
+  <!--CONTACT VIEW-->
+
+  <!--FILMS VIEW-->
+  <div class="messageText" id="filmsView">
+    <h3 style="text-align:center;">2021 Films</h3>
+    <div id="filmContainer">
+      <div id="filmPopUp">
+        <div class="dimmer" onClick="hidePopUp()"></div>
+        <div class="popUpWrapper">
+          <div class="crossContainer">
+            <img class="popUpCross" src="Pictures/Cross.png" onClick="hidePopUp()" alt="Close pop up"/>
+          </div>
+          <img class="popUpImage" id="popUpImage" src="" alt="Film image"/>
+          <div class="popUpText">
+            <p id="popUpTitle"></p>
+            <p id="popUpArtist"></p>
+            <p id="popUpNation"></p>
+            <p id="popUpLength"></p>
+            <p id="popUpDescription"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--FILMS VIEW-->
+
+  <!--SCHEDULE VIEW-->
+  <div class="messageText" id="scheduleView">
+    <h3 style="text-align:center;">Schedule</h3>
+
+    <div class="date">
+      <h4>Tuesday 13th of April</h4>
+      <h5>
+        Time and place: 17:00-20.00 at Studio 44.
+        <a href="https://goo.gl/maps/oCgqUG62RPjhotvC9" target="blank">
+          <img src="Pictures/marker.png" class="mapIcon" width="10px" height="auto" alt="Link to map"/>
+        </a>
+      </h5>
+      <p>
+        <h5 class="dateGroup">The Grand Opening</h5>
+        Carol-Ann Belzil-Normand, Smell of Sound, 02:34, Canada<br/>
+        Sirous Namazi, Pending, 03:25, Sweden<br/>
+        Bjorn Melhus, Suger. 03:25, Germany<br/>
+        Adebukola Bodunrin, Gather + Listen, 4:39, Nigeria/Canada<br/>
+        Dirk Koy, Out of Site, 02:40, USA<br/>
+        Sophie. Koko-Gate, Sluglife, 04:34, UK<br/>
+        Marja Leena Sillanpää, Predictions, 04:07, Sweden<br/>
+        Lei Lei, This is Not a Time for Lie, 03:34, China
+      </p>
+    </div>
+
+    <div class="date">
+      <h4>Wednesday 14th of April</h4>
+      <h5>
+        Time and place: 15:00-20:00 at Studio 44.
+        <a href="https://goo.gl/maps/oCgqUG62RPjhotvC9" target="blank">
+          <img src="Pictures/marker.png" class="mapIcon" width="10px" height="auto" alt="Link to map"/>
+        </a>
+      </h5>
+      <p>
+        <h5 class="dateGroup">Body &amp; Soul</h5>
+          Stuart Pound, Run version vertical, 05:00;UK<br/>
+          Sophie Koko Gate, Sluglife, 06:34, USA<br/>
+          Dirk Koy, Out of Site, 02:40, USA<br/>
+          Alexander Isaenko, Adieu, Corpus, 08:07, Ukraine<br/>
+          Thiago Martins de Melo, Bárbara balaclava, 14,44, Brasil<br/>
+          Adebukola Bodunrin, Gather + Listen, 04:39, Nigeria/Canada<br/>
+          Ekaterina Sisfontes, Telepathy, 04:03, Sweden
+      </p>
+      <p>
+        <h5 class="dateGroup">I saw you who was myself</h5>
+          Åsa Cederquist, Mama Dada Gaga, 32,25, Sweden<br/>
+          Peter Millard, A message for the dogs from a dog, 05:40, UK<br/>
+          Vedran Rupie, Horse, 02:27, Sweden<br/>
+          Peter Frandsen, First Proof of Nonlinear Motion, 03:07, USA<br/>
+          Jannike Brantås, En vana som knappt känns/A habit hardly felt, 09:21, Sweden<br/>
+          Monica Larsson, Mongolian Horses, 04:38, Sweden<br/>
+          Atefeh Rahmani, From Now On, 02:37, Iran
+      </p>
+    </div>
+
+    <div class="date">
+      <h4>Thursday 15th of April</h4>
+      <h5>
+        Time and place: 15:00-20:00 at Studio 44.
+        <a href="https://goo.gl/maps/oCgqUG62RPjhotvC9" target="blank">
+          <img src="Pictures/marker.png" class="mapIcon" width="10px" height="auto" alt="Link to map"/>
+        </a>
+      </h5>
+      <p>
+        <h5 class="dateGroup">More then One and more Complex</h5>
+        Marja Helander, Birds in Sky, 11:00, Finland<br/>
+        Ana Baer, Being Together, 04:01, USA<br/>
+        Benjamin Rosenthal &amp; Eric Souther, he gleaners, and: ritual for signaled bodies, 08:33, USA<br/>
+        Julia &amp; Clara von Schantzz, THE DIVIDUAL&#39;S HEALTH ORGANIZATION, 03:53, Sweden<br/>
+        Leena Rammi, Dreams, 01:14, Sweden
+      </p>
+      <p>
+        <h5 class="dateGroup">My queendom</h5>
+        Gunvor Nelson, Frame Line, 22:00, Sweden<br/>
+        Cameron Carr, Regeneration, 01:57, USA<br/>
+        Samuel Patthey, Travelogue Tel Aviv, 06:00, Swizerland<br/>
+        Emma Dominguez, Exil, 03:22, Sweden<br/>
+        Ismael Sanz-Pena, Persistence of Vision III, 01:40, Norway<br/>
+        David Anthony Saint, Expanse, 04:27, Australia<br/>
+        Amanulably Abraham, Dream &amp; Nightmare: Detroit – Stockholm, 18:00, Sweden<br/>
+        Mats Lundell, 2010, 11:12, Sweden
+      </p>
+    </div>
+
+    <div class="date">
+      <h4>Friday 16th of April</h4>
+      <h5>
+        Time and place: 15:00-20:00 at Studio 44.
+        <a href="https://goo.gl/maps/oCgqUG62RPjhotvC9" target="blank">
+          <img src="Pictures/marker.png" class="mapIcon" width="10px" height="auto" alt="Link to map"/>
+        </a>
+      </h5>
+      <p>
+        <h5 class="dateGroup">Only the Lonely</h5>
+        Meat Dept, Very Noise, 02:27, USA<br/>
+        Mats Landström, Circuir, 05:20, Sweden<br/>
+        Lei Lei, This is Not a Time to Lie, 03:34, China<br/>
+        Jungkyun Shin, Acrobat, 13,28, Korea<br/>
+        Andreas Gogol, Xarusell, 07:10, Germany<br/>
+        Christina Hedlund, Paus, 00:53, Sweden<br/>
+        Carolina Hindsjö, Adam, Eva and the Serpant, 14:30, Sweden<br/>
+        Auden Lincoln-Vogel, Dog With a Head, 14:45, USA
+      </p>
+      <p>
+        <h5 class="dateGroup">Do you believe in Magic?</h5>
+        Alisi Telengut, The Fourfold, 07:14, Canada<br/>
+        Carol-Ann Belzil-Normand, Smell of Sound, 02:24, Canada<br/>
+        Nowhere Mountaine, Mark Regester, Lifespan, 03:50, USA<br/>
+        Tina Willgren, Ramblings, 04:14, Sweden<br/>
+        Pere Girard, Dad is Gone, 03:44, Peru<br/>
+        Nuotama Bodomo, Everybody dies, 05:00, Ghana<br/>
+        Emie, M-E: A Video Selfie, 14:20, Sweden
+      </p>
+    </div>
+
+    <div class="date">
+      <h4>Saturday 17th of April</h4>
+      <h5>
+        Time and place: 15:00-20:00 at Studio 44.
+        <a href="https://goo.gl/maps/oCgqUG62RPjhotvC9" target="blank">
+          <img src="Pictures/marker.png" class="mapIcon" width="10px" height="auto" alt="Link to map"/>
+        </a>
+      </h5>
+      <p>
+        <h5 class="dateGroup">Stepping up a level</h5>
+        Deren Ercenk, Berzah, 25,45, Turkey<br/>
+        Mauricio Sanhueza, Do You Smell That?, 02:14, Peru<br/>
+        Magnus Wallin, Sky Line, 02:35, Sweden<br/>
+        Sirous Namazi, Reversed Tunnel, 00:56, Sweden<br/>
+        Björn Melhus, Suger, 20:30, Germany<br/>
+        Parashar Naik, Untitled, 07:32, India<br/>
+        Julian Antonisz, How a Saugage Dog, 08:50, Polan
+      </p>
+      <p>
+        <h5 class="dateGroup">At the end of the corridor there was a door</h5>
+        Sirous Namazi, Pending, 03:25, Sweden<br/>
+        Daniele Sherer, Peregrine, 03:08, Israel<br/>
+        Marja Leena Sillanpää, Predictions, 04:07, Finland<br/>
+        Janie Geiser, The Fourth Watch, 10, 10:00, USA
+      </p>
+    </div>
+
+    <div class="date">
+      <h4>Sunday 18th of April</h4>
+      <h5>
+        Time and place: 12:00-20:00 at Studio 44.
+        <a href="https://goo.gl/maps/oCgqUG62RPjhotvC9" target="blank">
+          <img src="Pictures/marker.png" class="mapIcon" width="10px" height="auto" alt="Link to map"/>
+        </a>
+      </h5>
+      <p>
+        <h5 class="dateGroup">A-Å</h5>
+        Adebukola Bodunrin, Gather + Listen, 04:39, Nigeria/Canada<br/>
+        Alexander Isaenko, Adieu, Corpus, 08:07, Ukraine<br/>
+        Alisi Telengut, The Fourfold, 07:14, Canada<br/>
+        Amanulably Abraham, Dream &amp; Nightmare: Detroit – Stockholm, 18:00 Sweden<br/>
+        Ana Baer, Being Together, 04:01, USA<br/>
+        Andreas Gogol, Xarusell, 07:10, Germany<br/>
+        Atefeh Rahmani, From Now On, 02:37, Iran<br/>
+        Auden Lincoln-Vogel, Dog With a Head, 14:45, USA<br/>
+        Benjamin Rosenthal &amp; Eric Souther, he gleaners, and: ritual for signaled bodies, 08:33, USA<br/>
+        Björn Melhus, Suger, 20:30, Germany<br/>
+        Cameron Carr, Regeneration, 01:57, USA<br/>
+        Carol-Ann Belzil-Normand, Smell of Sound, 02:24, Canada<br/>
+        Carolina Hindsjö, Adam, Eva and the Serpant, 14:30, Sweden<br/>
+        Christina Hedlund, Paus, 00:53, Sweden<br/>
+        Daniele Sherer, Peregrine, 03:08, Israel<br/>
+        David Anthony Saint, Expanse, 04:27, Australia<br/>
+        Deren Ercenk, Berzah, 25,45, Turkey<br/>
+        Dirk Koy, Out of Site, 02:40, USA<br/>
+        Ekaterina Sisfontes, Telepathy, 04:03, Sweden<br/>
+        Emie, M-E: A Video Selfie, 14:20, Sweden<br/>
+        Emma Dominguez, Exil, 03:22, Sweden<br/>
+        Gunvor Nelson, Frame Line, 22:00, Sweden<br/>
+        Ismael Sanz-Pena, Persistence of Vision III, 01:40, Norway<br/>
+        Janie Geiser, The Fourth Watch, 10, 10:00, USA<br/>
+        Jannike Brantås, En vana som knappt känns/A habit hardly felt, 09:21, Sweden<br/>
+        Julia &amp; Clara von Schantzz, THE DIVIDUAL&#39;S HEALTH ORGANIZATION, 03:53, Sweden<br/>
+        Jungkyun Shin, Acrobat, 13,28, Korea<br/>
+        Leena Rammi, Dreams, 01:14, Sweden<br/>
+        Lei Lei, This is Not a Time to Lie, 03:34, China<br/>
+        Magnus Wallin, Sky Line, 02:35, Sweden<br/>
+        Marja Helander, Birds in Sky, 11:00, Finland<br/>
+        Marja Leena Sillanpää, Predictions, 04:07, Finland<br/>
+        Mats Landström, Circuir, 05:20, Sweden<br/>
+        Mats Lundell, 2010, 11:12, Sweden<br/>
+        Mauricio Sanhueza, Do You Smell That?, 02:14, Peru<br/>
+        Meat Dept, Very Noise, 02:27, USA<br/>
+        Monica Larsson, Mongolian Horses, 04:38, Sweden<br/>
+        Nowhere Mountaine, Mark Regester, Lifespan, 03:50, USA<br/>
+        Nuotama Bodomo, Everybody dies, 05:00, Ghana<br/>
+        Parashar Naik, Untitled, 07:32, India<br/>
+        Pere Girard, Dad is Gone, 03:44, Peru<br/>
+        Peter Frandsen, First Proof of Nonlinear Motion, 03:07, USA<br/>
+        Peter Millard, A message for the dogs from a dog, 05:40, UK<br/>
+        Samuel Patthey, Travelogue Tel Aviv, 06:00, Swizerland<br/>
+        Sirous Namazi, Pending, 03:25, Sweden<br/>
+        Sirous Namazi, Reversed Tunnel, 00:56, Sweden<br/>
+        Sophie Koko Gate, Sluglife, 06:34, USA<br/>
+        Stuart Pound, Run version vertical, 05:00, UK<br/>
+        Thiago Martins de Melo, Bárbara balaclava, 14:44, Brasil<br/>
+        Tina Willgren, Ramblings, 04:14, Sweden<br/>
+        Vedran Rupie, Horse, 02:27, Sweden<br/>
+        Åsa Cederquist, Mama Dada Gaga, 32:25, Sweden
+      </p>
+    </div>
+  </div>
+  <!--SCHEDULE VIEW-->
+
+  <!--ABOUT VIEW-->
+  <div class="messageText" id="aboutView">
+    <h3 style="text-align:center;">About</h3>
+    <div style="padding:400px 0 0 0;position:relative;">
+      <iframe src="https://player.vimeo.com/video/345105216?color=A8A8A8&title=0&byline=0&portrait=0" title="Demo movie of the Festival" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="aboutText">
+      <p>
+        An Ordinary Day Film Festival was established in 2017, with the intention of showing the best and most interesting works from artists and filmmakers. The fun of experimental films is that the film is explored as a medium. We have seen lots of movies and have made a careful selection. When watching films, many feelings may appear. We want to explore different topics and ways to make films. The viewers should enjoy the full spectrum of experimental movies. The creators of the festival have different tastes which make the festival diverse. We have had discussions about the films and developed our own taste and we wish the visitors to do the same journey. AODFF screens a broad range of experimental work, including animation, documentary, narrative, and hybrid films. Each year the festival presents 40-60 shorts films and videos in programming, both from Sweden and international, that demonstrate a high regard for the moving image as an experimental art form. We choose films that allow us to focus on unconventional ways of working with the audience, breaking its patterns of filmic perception and providing extraordinary filmic experience. Every kind of filmmaking is unique. We are proud to show the directors/artists film.
+      </p>
+      <p>
+        An Ordinary Day Film Festival is placed at Gallery Studio 44, an artist run gallery in Stockholm. After every filmsession you are free to discuss the films in the bar. An Ordinary Day Film Society loves to talk about films. That is the way of moving the creation of film forward.
+      </p>
+      <p>
+        Tickets are bought at the festival. The price is 30 sek for each day. If you want to go to the festival the whole week, there is an offer to be a member of An Ordinary Day Film Society. The price is 100 sek and you will be able to watch all the good films.
+      </p>
+      <p>
+        We are kindly thanking FILMFORM for valuable support.
+        We are kindly thanking Stockholm Stad for valuable support.
+      </p>
+      <p>
+        Availability: The area of Studio 44 is approximate 170 square meters. You are able to reach Studio 44 by staircase or elevator. The elevator is 85 cm wide and 160 cm deep and the door is 80 cm wide. In the space you can drive a motorized wheelchair. The toilet is 145 cm times 195 cm and the door is 80 cm wide.
+      </p>
+      <p>
+        Follow us on Social Media:<br/>
+        Facebook: https://www.facebook.com/AnOrdinaryDayFilmFestival<br/>
+        Instagram: @anordinarydayfilmfestival
+      </p>
+    </div>
+  </div>
+  <!--ABOUT VIEW-->
+
+</body>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery.js"></script>
+
+<!-- Links to JS -->
+<script src="js/app.js"></script>
+<script src="js/router.js"></script>
+<script src="https://player.vimeo.com/api/player.js"></script>
+
+</html>
